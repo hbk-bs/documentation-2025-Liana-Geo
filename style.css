@@ -1,0 +1,19 @@
+.project-btn {
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.10);
+  transition: all 0.3s;
+}
+
+/* Hover highlight effect */
+.project-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(129, 140, 248, 0.6), 0 0 40px rgba(168, 85, 247, 0.5);
+}
+.project-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(129, 140, 248, 0.4), 0 0 20px rgba(168, 85, 247, 0.3);
+}
