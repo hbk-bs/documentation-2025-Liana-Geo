@@ -1,19 +1,83 @@
-.project-btn {
-  background: linear-gradient(to right, #6366f1, #a855f7);
-  color: #fff;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.10);
-  transition: all 0.3s;
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f7f7fb;
+  color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
 }
 
-/* Hover highlight effect */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.project-btn {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: white;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.25);
+}
+
 .project-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(129, 140, 248, 0.6), 0 0 40px rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.5),
+              0 0 40px rgba(168, 85, 247, 0.5);
 }
-.project-btn:active {
-  transform: scale(0.95);
-  box-shadow: 0 0 10px rgba(129, 140, 248, 0.4), 0 0 20px rgba(168, 85, 247, 0.3);
+
+.subpage {
+  max-width: 700px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.project-info {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.project-info a {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
 }
